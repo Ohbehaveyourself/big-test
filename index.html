@@ -29,6 +29,26 @@
         }
         section {
             margin-top: 20px;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        .features-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features-list li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .features-list li:before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #2c3e50;
         }
     </style>
 </head>
@@ -38,6 +58,31 @@
         <section>
             <h2>About</h2>
             <p>This page was created as part of a GitHub workflow demonstration.</p>
+        </section>
+        <section>
+            <h2>Features</h2>
+            <ul class="features-list">
+                <li>Simple and clean design</li>
+                <li>Responsive layout</li>
+                <li>Modern typography</li>
+                <li>Optimized for readability</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact Information</h2>
+            <p>Get in touch with us:</p>
+            <p>Email: contact@example.com<br>
+            Phone: (555) 123-4567<br>
+            Address: 123 Demo Street, Test City, TC 12345</p>
+        </section>
+        <section>
+            <h2>Project Updates</h2>
+            <p>Latest updates on our project:</p>
+            <ul>
+                <li>Added new content sections</li>
+                <li>Improved styling and layout</li>
+                <li>Enhanced user experience</li>
+            </ul>
         </section>
     </div>
 </body>
